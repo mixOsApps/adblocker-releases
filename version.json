@@ -1,7 +1,7 @@
 {
-  "versionCode": 13,
-  "versionName": "0.11.1",
-  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.11.1/mixzen-adblocker-0.11.1.apk",
-  "releaseNotes": "Full routing no longer slows down Snapchat, YouTube and other apps that use QUIC.",
+  "versionCode": 14,
+  "versionName": "0.11.2",
+  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.11.2/mixzen-adblocker-0.11.2.apk",
+  "releaseNotes": "The HTTPS filtering setup sheet now scrolls, so Turn on is reachable, and it lists only real browsers.",
   "forceUpdate": false
 }
