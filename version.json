@@ -1,7 +1,7 @@
 {
-  "versionCode": 15,
-  "versionName": "0.12.0",
-  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.12.0/mixzen-adblocker-0.12.0.apk",
-  "releaseNotes": "HTTPS filtering: choose apps on their own screen, with a Filter all apps switch. The setup sheet now shows all apps in place.",
+  "versionCode": 16,
+  "versionName": "0.13.0",
+  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.13.0/mixzen-adblocker-0.13.0.apk",
+  "releaseNotes": "Optional crash reports: if you agree, a crash or freeze sends a short report (no personal data) so it can be fixed.",
   "forceUpdate": false
 }
