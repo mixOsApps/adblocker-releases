@@ -1,7 +1,7 @@
 {
-  "versionCode": 12,
-  "versionName": "0.11.0",
-  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.11.0/mixzen-adblocker-0.11.0.apk",
-  "releaseNotes": "Share the app with others: send the file (Quick Share, Bluetooth), show a QR code, or copy the download link.",
+  "versionCode": 13,
+  "versionName": "0.11.1",
+  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.11.1/mixzen-adblocker-0.11.1.apk",
+  "releaseNotes": "Full routing no longer slows down Snapchat, YouTube and other apps that use QUIC.",
   "forceUpdate": false
 }
