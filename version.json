@@ -1,7 +1,7 @@
 {
-  "versionCode": 10,
-  "versionName": "0.9.0",
-  "apkUrl": "",
-  "releaseNotes": "",
+  "versionCode": 11,
+  "versionName": "0.10.0",
+  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.10.0/mixzen-adblocker-0.10.0.apk",
+  "releaseNotes": "HTTPS filtering per app (browsers) and in-app updates.",
   "forceUpdate": false
 }
