@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MixZen AdBlocker</title>
+<meta name="description" content="Download MixZen AdBlocker, a personal system-wide ad blocker for Android.">
+<link rel="icon" href="logo.png">
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--text:#141a24;--muted:#5b6575;--accent:#1f6feb;--on-accent:#fff;--line:#dfe4ec}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161c26;--text:#e8edf5;--muted:#9aa6b8;--accent:#4c9aff;--on-accent:#06101f;--line:#262f3d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:520px;margin:0 auto;padding:32px 16px 48px}
+header{text-align:center}
+header img{width:96px;height:96px;border-radius:22px}
+h1{margin:12px 0 4px;font-size:1.6rem}
+.sub{margin:0;color:var(--muted)}
+.ver{margin:12px 0 0;color:var(--muted);font-size:.95rem}
+.btn{display:block;margin:20px 0 8px;padding:16px;border-radius:14px;background:var(--accent);color:var(--on-accent);text-align:center;font-weight:700;font-size:1.1rem;text-decoration:none}
+.btn:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-top:20px}
+h2{margin:0 0 8px;font-size:1.05rem}
+ol{margin:0;padding-left:1.3em}
+li{margin:6px 0}
+p{margin:0}
+.note{color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+<img src="logo.png" alt="MixZen AdBlocker logo" width="96" height="96">
+<h1>MixZen AdBlocker</h1>
+<p class="sub">Blocks ads and trackers in every app on your phone.</p>
+<p class="ver" id="ver">Latest version</p>
+</header>
+<a class="btn" id="dl" href="https://github.com/mixOsApps/adblocker-releases/releases/latest">Download for Android</a>
+<section>
+<h2>How to install</h2>
+<ol>
+<li>Tap <b>Download</b> and wait for the file to finish.</li>
+<li>Open the downloaded file (find it in your notifications or the Downloads folder).</li>
+<li>If Android asks, allow <b>Install unknown apps</b> for your browser, then go back.</li>
+<li>Tap <b>Install</b>, open the app and accept the VPN permission.</li>
+</ol>
+</section>
+<section class="note">
+<p>MixZen AdBlocker is a personal ad blocker. It is not on Google Play, and it needs the VPN permission to filter traffic on your phone. Your browsing stays on your phone. The app updates itself.</p>
+</section>
+</main>
+<script>
+(function () {
+  var FEED = "https://raw.githubusercontent.com/mixOsApps/adblocker-releases/main/version.json";
+  var dl = document.getElementById("dl"), ver = document.getElementById("ver");
+  fetch(FEED, { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      if (!j.apkUrl || !j.versionName) throw new Error("bad feed");
+      dl.href = j.apkUrl;
+      ver.textContent = "Version " + j.versionName;
+    })
+    .catch(function () { ver.textContent = "Latest version"; });
+})();
+</script>
+</body>
+</html>
