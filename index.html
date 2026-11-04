@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MixZen AdBlocker</title>
-<meta name="description" content="Download MixZen AdBlocker, a personal system-wide ad blocker for Android.">
+<meta name="description" content="Download MixZen AdBlocker, a personal system-wide ad blocker for Android and Windows.">
 <link rel="icon" href="logo.png">
 <style>
 :root{--bg:#f4f6fa;--card:#fff;--text:#141a24;--muted:#5b6575;--accent:#1f6feb;--on-accent:#fff;--line:#dfe4ec}
@@ -32,10 +32,11 @@ p{margin:0}
 <header>
 <img src="logo.png" alt="MixZen AdBlocker logo" width="96" height="96">
 <h1>MixZen AdBlocker</h1>
-<p class="sub">Blocks ads and trackers in every app on your phone.</p>
+<p class="sub">Blocks ads and trackers in every app on your phone and on your Windows PC.</p>
 <p class="ver" id="ver">Latest version</p>
 </header>
-<a class="btn" id="dl" href="https://github.com/mixOsApps/adblocker-releases/releases/latest">Download for Android</a>
+<a class="btn" id="dl" href="https://github.com/mixOsApps/adblocker-releases/releases/tag/v0.14.1">Download for Android</a>
+<a class="btn" id="dlwin" href="https://github.com/mixOsApps/adblocker-releases/releases/tag/desktop-v0.4.0">Download for Windows</a>
 <section>
 <h2>How to install</h2>
 <ol>
@@ -43,6 +44,15 @@ p{margin:0}
 <li>Open the downloaded file (find it in your notifications or the Downloads folder).</li>
 <li>If Android asks, allow <b>Install unknown apps</b> for your browser, then go back.</li>
 <li>Tap <b>Install</b>, open the app and accept the VPN permission.</li>
+</ol>
+</section>
+<section>
+<h2>How to install on Windows</h2>
+<ol>
+<li>Click <b>Download for Windows</b> and wait for the .msi file to finish.</li>
+<li>Double-click the file. If SmartScreen warns, choose <b>More info</b>, then <b>Run anyway</b>.</li>
+<li>Open MixZen AdBlocker. On the first start Windows asks for administrator permission once, so the app can switch your DNS.</li>
+<li>To remove it, use <b>Settings &gt; Apps</b>. Uninstalling puts your Windows settings back first.</li>
 </ol>
 </section>
 <section class="note">
@@ -61,6 +71,16 @@ p{margin:0}
       ver.textContent = "Version " + j.versionName;
     })
     .catch(function () { ver.textContent = "Latest version"; });
+
+  var winDl = document.getElementById("dlwin");
+  fetch("https://raw.githubusercontent.com/mixOsApps/adblocker-releases/main/desktop-version.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) {
+      if (!j.msiUrl || !j.versionName) throw new Error("bad feed");
+      winDl.href = j.msiUrl;
+      winDl.textContent = "Download for Windows (" + j.versionName + ")";
+    })
+    .catch(function () { /* keep the release-page fallback */ });
 })();
 </script>
 </body>
