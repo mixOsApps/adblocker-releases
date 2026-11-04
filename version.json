@@ -1,7 +1,7 @@
 {
-  "versionCode": 16,
-  "versionName": "0.13.0",
-  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.13.0/mixzen-adblocker-0.13.0.apk",
-  "releaseNotes": "Optional crash reports: if you agree, a crash or freeze sends a short report (no personal data) so it can be fixed.",
+  "versionCode": 17,
+  "versionName": "0.14.0",
+  "apkUrl": "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.14.0/mixzen-adblocker-0.14.0.apk",
+  "releaseNotes": "Blocks pop-up ad tabs and pop-ups from embedded video players, runs the filter lists' site fixes, and fixes sites (YouTube, Instagram, MSN, Bing and others) that were blocked by mistake, plus pages that sometimes loaded broken.",
   "forceUpdate": false
 }
