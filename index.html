@@ -16,7 +16,6 @@ header{text-align:center}
 header img{width:96px;height:96px;border-radius:22px}
 h1{margin:12px 0 4px;font-size:1.6rem}
 .sub{margin:0;color:var(--muted)}
-.ver{margin:12px 0 0;color:var(--muted);font-size:.95rem}
 .btn{display:block;margin:20px 0 8px;padding:16px;border-radius:14px;background:var(--accent);color:var(--on-accent);text-align:center;font-weight:700;font-size:1.1rem;text-decoration:none}
 .btn:focus-visible{outline:3px solid var(--text);outline-offset:2px}
 section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px;margin-top:20px}
@@ -33,7 +32,6 @@ p{margin:0}
 <img src="logo.png" alt="MixZen AdBlocker logo" width="96" height="96">
 <h1>MixZen AdBlocker</h1>
 <p class="sub">Blocks ads and trackers in every app on your phone and on your Windows PC.</p>
-<p class="ver" id="ver">Latest version</p>
 </header>
 <a class="btn" id="dl" href="https://github.com/mixOsApps/adblocker-releases/releases/tag/v0.14.1">Download for Android</a>
 <a class="btn" id="dlwin" href="https://github.com/mixOsApps/adblocker-releases/releases/tag/desktop-v0.4.0">Download for Windows</a>
@@ -62,15 +60,15 @@ p{margin:0}
 <script>
 (function () {
   var FEED = "https://raw.githubusercontent.com/mixOsApps/adblocker-releases/main/version.json";
-  var dl = document.getElementById("dl"), ver = document.getElementById("ver");
+  var dl = document.getElementById("dl");
   fetch(FEED, { cache: "no-store" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (j) {
       if (!j.apkUrl || !j.versionName) throw new Error("bad feed");
       dl.href = j.apkUrl;
-      ver.textContent = "Version " + j.versionName;
+      dl.textContent = "Download for Android (" + j.versionName + ")";
     })
-    .catch(function () { ver.textContent = "Latest version"; });
+    .catch(function () { /* keep the release-page fallback */ });
 
   var winDl = document.getElementById("dlwin");
   fetch("https://raw.githubusercontent.com/mixOsApps/adblocker-releases/main/desktop-version.json", { cache: "no-store" })
