@@ -1,7 +1,7 @@
 {
-    "versionCode":  18,
-    "versionName":  "0.14.1",
-    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.14.1/mixzen-adblocker-0.14.1.apk",
-    "releaseNotes":  "Fixes internet stalls with Full routing: incoming data (video, voice notes, live pages) no longer waits up to a minute.",
+    "versionCode":  19,
+    "versionName":  "0.15.0",
+    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.15.0/mixzen-adblocker-0.15.0.apk",
+    "releaseNotes":  "New: Network diary (Settings > Diagnostics). Turn it on to keep 24 hours of connection events on your phone; if the internet drops, Save to Downloads and send the file.",
     "forceUpdate":  false
 }
