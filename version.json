@@ -1,7 +1,7 @@
 {
-    "versionCode":  21,
-    "versionName":  "0.16.0",
-    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.16.0/mixzen-adblocker-0.16.0.apk",
-    "releaseNotes":  "Fixes high battery use with Full routing or HTTPS filtering. Adds battery lines to the Network diary and an Email diary button, plus a DNS fallback when your DNS servers stop answering.",
+    "versionCode":  22,
+    "versionName":  "0.16.1",
+    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.16.1/mixzen-adblocker-0.16.1.apk",
+    "releaseNotes":  "Protection now comes back by itself after an update or if Android closes the app, or you get a notification to tap. Home no longer says protection is on when it isn't running.",
     "forceUpdate":  false
 }
