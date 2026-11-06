@@ -1,7 +1,7 @@
 {
-    "versionCode":  19,
-    "versionName":  "0.15.0",
-    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.15.0/mixzen-adblocker-0.15.0.apk",
-    "releaseNotes":  "New: Network diary (Settings > Diagnostics). Turn it on to keep 24 hours of connection events on your phone; if the internet drops, Save to Downloads and send the file.",
+    "versionCode":  21,
+    "versionName":  "0.16.0",
+    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.16.0/mixzen-adblocker-0.16.0.apk",
+    "releaseNotes":  "Fixes high battery use with Full routing or HTTPS filtering. Adds battery lines to the Network diary and an Email diary button, plus a DNS fallback when your DNS servers stop answering.",
     "forceUpdate":  false
 }
