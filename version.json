@@ -1,7 +1,7 @@
 {
-    "versionCode":  23,
-    "versionName":  "0.16.2",
-    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.16.2/mixzen-adblocker-0.16.2.apk",
-    "releaseNotes":  "Protection now comes back after you leave an app that turns the VPN off while open, including games that never report leaving.",
+    "versionCode":  24,
+    "versionName":  "0.17.0",
+    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.17.0/mixzen-adblocker-0.17.0.apk",
+    "releaseNotes":  "Faster page loads with HTTPS filtering (HTTP/2), quicker DNS after a network switch, and more ads removed inside pages (uBlock Origin list on by default).",
     "forceUpdate":  false
 }
