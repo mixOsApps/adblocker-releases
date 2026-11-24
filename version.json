@@ -1,7 +1,7 @@
 {
-    "versionCode":  24,
-    "versionName":  "0.17.0",
-    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.17.0/mixzen-adblocker-0.17.0.apk",
-    "releaseNotes":  "Faster page loads with HTTPS filtering (HTTP/2), quicker DNS after a network switch, and more ads removed inside pages (uBlock Origin list on by default).",
+    "versionCode":  25,
+    "versionName":  "0.18.0",
+    "apkUrl":  "https://github.com/mixOsApps/adblocker-releases/releases/download/v0.18.0/mixzen-adblocker-0.18.0.apk",
+    "releaseNotes":  "Updates show their progress on screen (Background or Cancel), never download the same version twice, and only install when you tap Install.",
     "forceUpdate":  false
 }
